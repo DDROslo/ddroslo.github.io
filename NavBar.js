@@ -4,7 +4,7 @@ class NavBar extends HTMLElement {
     this.innerHTML = `
 <nav>
   <ul>
-    <li><a href="./main.html"><img src="./assets/arrow.svg" id="logo">Home </a></li>
+    <li><a href="./index.html"><img src="./assets/arrow.svg" id="logo">Home </a></li>
     <li><a href="./events.html">Events</a></li>
     <li><a href="./guidelines.html">Guidelines</a></li>
     <li><a href="./about.html">About</a></li>
