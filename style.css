@@ -127,5 +127,28 @@ button:active {
 } */
 /* TEMP RESETS */
 
-main {
+#banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--secondary-color-500);
+  color: var(--black);
+  text-align: center;
+  margin: 0;
+  padding: 1rem;
+  font-family: var(--secondary-ff);
+  font-weight: 900;
+}
+
+#banner p {
+  display: inline-block;
+}
+
+#banner img {
+  max-height: 2rem;
+}
+
+#banner img:last-of-type {
+  transform: scale(-1, 1);
 }
