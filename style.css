@@ -63,10 +63,18 @@ h5,
 h6 {
   font-family: var(--secondary-ff);
 }
+
+a {
+  color: var(--primary-color-300);
 }
 
 nav #logo {
   max-height: 50px;
+}
+
+*:focus-visible {
+  outline: var(--outline);
+  border-radius: 0.1rem;
 }
 
 /* TODO: Clean up */
