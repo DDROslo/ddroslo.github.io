@@ -1,0 +1,50 @@
+@keyframes signal-bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.signal {
+  text-align: center;
+}
+
+.signal-qr {
+  box-sizing: border-box;
+  width: clamp(16ch, 16ch, 90vw);
+  fill: var(--white);
+  padding: 0.5rem;
+  background: var(--primary-color-800);
+  border-radius: 0.5rem;
+}
+
+.signal-link {
+  display: inline-block;
+  margin: 0;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0.5rem;
+  background-color: var(--primary-color-800);
+  border-radius: 0.5rem;
+  transition: background-position 1s;
+}
+
+.signal-link:hover,
+.signal-link:focus {
+  background: var(--gradient-45);
+  background-size: 300%;
+  background-position: left;
+  transition:
+    background-position 1s,
+    transform 1s;
+}
+
+.signal-link:focus {
+  outline: var(--outline);
+}
+
+.signal-link:active {
+  transform: scale(0.99);
+}
