@@ -77,6 +77,20 @@ nav #logo {
   border-radius: 0.1rem;
 }
 
+.skip-to-content-link {
+  height: 1rem;
+  padding: 0.5rem;
+  position: absolute;
+  transform: translateY(-200%);
+  transition: transform 0.3s;
+  background-color: var(--secondary-color-500);
+  color: var(--black);
+}
+
+.skip-to-content-link:focus {
+  transform: translateY(0%);
+}
+
 /* TODO: Clean up */
 /* TEMP RESETS */
 /* button {

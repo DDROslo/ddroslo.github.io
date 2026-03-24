@@ -2,6 +2,7 @@ class NavBar extends HTMLElement {
   constructor() {
     super();
     this.innerHTML = `
+<a class="skip-to-content-link" href="#main"> Skip to content </a>
 <nav>
   <ul>
     <li><a href="./index.html"><img src="./assets/arrow.svg" id="logo">Home </a></li>
