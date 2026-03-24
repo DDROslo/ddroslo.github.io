@@ -20,14 +20,32 @@
 }
 
 :root {
-  --primary-color-800: #354ba1;
-  --primary-color-500: #178ed2;
-  --primary-color-300: #00c3fd;
+  --primary-color-800: hsl(228, 50%, 42%);
+  --primary-color-500: hsl(202, 80%, 46%);
+  --primary-color-300: hsl(194, 100%, 50%);
+  --primary-color-100: hsl(194, 100%, 90%);
+  --primary-color-050: hsl(194, 100%, 95%);
   --secondary-color-500: #fc5b5b;
   --white: #f9fbfb;
   --black: #221f21;
   --primary-ff: "Inter", sans-serif;
   --secondary-ff: "Orbitron", monospace;
+  --gradient-bottom: linear-gradient(
+    to bottom,
+    var(--primary-color-800) 0%,
+    var(--primary-color-300) 100%
+  );
+  --gradient-left: linear-gradient(
+    to left,
+    var(--primary-color-800) 0%,
+    var(--primary-color-300) 100%
+  );
+  --gradient-45: linear-gradient(
+    45deg,
+    var(--primary-color-800) 0%,
+    var(--primary-color-300) 100%
+  );
+  --outline: 2px solid var(--secondary-color-500);
 }
 
 body {
