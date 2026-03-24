@@ -33,16 +33,19 @@
   --gradient-bottom: linear-gradient(
     to bottom,
     var(--primary-color-800) 0%,
+    var(--primary-color-500) 50%,
     var(--primary-color-300) 100%
   );
   --gradient-left: linear-gradient(
     to left,
     var(--primary-color-800) 0%,
+    var(--primary-color-500) 50%,
     var(--primary-color-300) 100%
   );
   --gradient-45: linear-gradient(
     45deg,
     var(--primary-color-800) 0%,
+    var(--primary-color-500) 50%,
     var(--primary-color-300) 100%
   );
   --outline: 2px solid var(--secondary-color-500);
