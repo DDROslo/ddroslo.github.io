@@ -36,6 +36,7 @@
   background: var(--gradient-45);
   background-size: 300%;
   background-position: left;
+  animation: signal-bg-animation 5s infinite alternate;
   transition:
     background-position 1s,
     transform 1s;
