@@ -152,3 +152,9 @@ button:active {
 #banner img:last-of-type {
   transform: scale(-1, 1);
 }
+
+#main {
+  width: clamp(20ch, 45rem, 100%);
+  margin: auto;
+  padding: 0.5rem 1rem;
+}
