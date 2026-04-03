@@ -25,7 +25,14 @@
   --primary-color-300: hsl(194, 100%, 50%);
   --primary-color-100: hsl(194, 100%, 90%);
   --primary-color-050: hsl(194, 100%, 95%);
-  --secondary-color-500: #fc5b5b;
+  --secondary-color-900: hsl(0, 96%, 32%);
+  --secondary-color-600: hsl(0, 95%, 57%);
+  --secondary-color-500: hsl(0, 95%, 62%);
+  --secondary-color-400: hsl(0, 96%, 67%);
+  --secondary-color-300: hsl(0, 96%, 72%);
+  --secondary-color-200: hsl(0, 96%, 77%);
+  --secondary-color-100: hsl(0, 96%, 82%);
+  --secondary-color-050: hsl(0, 96%, 87%);
   --white: #f9fbfb;
   --black: #221f21;
   --primary-ff: "Inter", sans-serif;
