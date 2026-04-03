@@ -20,42 +20,42 @@
 }
 
 :root {
-  --primary-color-800: hsl(228, 50%, 42%);
-  --primary-color-500: hsl(202, 80%, 46%);
-  --primary-color-300: hsl(194, 100%, 50%);
-  --primary-color-100: hsl(194, 100%, 90%);
-  --primary-color-050: hsl(194, 100%, 95%);
-  --secondary-color-900: hsl(0, 96%, 32%);
-  --secondary-color-600: hsl(0, 95%, 57%);
-  --secondary-color-500: hsl(0, 95%, 62%);
-  --secondary-color-400: hsl(0, 96%, 67%);
-  --secondary-color-300: hsl(0, 96%, 72%);
-  --secondary-color-200: hsl(0, 96%, 77%);
-  --secondary-color-100: hsl(0, 96%, 82%);
-  --secondary-color-050: hsl(0, 96%, 87%);
+  --secondary-color-800: hsl(228, 50%, 42%);
+  --secondary-color-500: hsl(202, 80%, 46%);
+  --secondary-color-300: hsl(194, 100%, 50%);
+  --secondary-color-100: hsl(194, 100%, 90%);
+  --secondary-color-050: hsl(194, 100%, 95%);
+  --primary-color-900: hsl(0, 96%, 32%);
+  --primary-color-600: hsl(0, 95%, 57%);
+  --primary-color-500: hsl(0, 95%, 62%);
+  --primary-color-400: hsl(0, 96%, 67%);
+  --primary-color-300: hsl(0, 96%, 72%);
+  --primary-color-200: hsl(0, 96%, 77%);
+  --primary-color-100: hsl(0, 96%, 82%);
+  --primary-color-050: hsl(0, 96%, 87%);
   --white: #f9fbfb;
   --black: #221f21;
   --primary-ff: "Inter", sans-serif;
   --secondary-ff: "Orbitron", monospace;
   --gradient-bottom: linear-gradient(
     to bottom,
-    var(--primary-color-800) 0%,
-    var(--primary-color-500) 50%,
-    var(--primary-color-300) 100%
+    var(--secondary-color-800) 0%,
+    var(--secondary-color-500) 50%,
+    var(--secondary-color-300) 100%
   );
   --gradient-left: linear-gradient(
     to left,
-    var(--primary-color-800) 0%,
-    var(--primary-color-500) 50%,
-    var(--primary-color-300) 100%
+    var(--secondary-color-800) 0%,
+    var(--secondary-color-500) 50%,
+    var(--secondary-color-300) 100%
   );
   --gradient-45: linear-gradient(
     45deg,
-    var(--primary-color-800) 0%,
-    var(--primary-color-500) 50%,
-    var(--primary-color-300) 100%
+    var(--secondary-color-800) 0%,
+    var(--secondary-color-500) 50%,
+    var(--secondary-color-300) 100%
   );
-  --outline: 2px solid var(--secondary-color-500);
+  --outline: 2px solid var(--primary-color-500);
 }
 
 *,
@@ -86,31 +86,31 @@ h6 {
 }
 
 h1 {
-  color: var(--secondary-color-500);
+  color: var(--primary-color-500);
 }
 
 h2 {
-  color: var(--secondary-color-400);
+  color: var(--primary-color-400);
 }
 
 h3 {
-  color: var(--secondary-color-300);
+  color: var(--primary-color-300);
 }
 
 h4 {
-  color: var(--secondary-color-200);
+  color: var(--primary-color-200);
 }
 
 h5 {
-  color: var(--secondary-color-100);
+  color: var(--primary-color-100);
 }
 
 h6 {
-  color: var(--secondary-color-050);
+  color: var(--primary-color-050);
 }
 
 a {
-  color: var(--primary-color-300);
+  color: var(--secondary-color-300);
 }
 
 ul {
@@ -158,7 +158,7 @@ nav #logo {
   position: absolute;
   transform: translateY(-200%);
   transition: transform 0.3s;
-  background-color: var(--secondary-color-500);
+  background-color: var(--primary-color-500);
   color: var(--black);
 }
 
@@ -171,7 +171,7 @@ nav #logo {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background-color: var(--primary-color-500);
+  background-color: var(--secondary-color-500);
   color: var(--black);
   text-align: center;
   margin: 0;
@@ -195,5 +195,5 @@ nav #logo {
 .last-updated {
   text-align: right;
   font-size: small;
-  color: var(--primary-color-500);
+  color: var(--secondary-color-500);
 }
