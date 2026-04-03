@@ -1,0 +1,71 @@
+.guidelines-banner {
+  background-color: var(--secondary-color-500);
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "nophoto-img respect-img noshouting-img"
+    "nophoto-txt respect-txt noshouting-txt";
+  justify-items: center;
+  align-items: center;
+  color: var(--black);
+  font-family: var(--secondary-ff);
+  font-weight: 900;
+  padding: 1rem calc(1rem + 5%);
+  gap: 0 1.5rem;
+  text-align: center;
+}
+
+.guidelines-banner p {
+  margin-bottom: 0;
+  /* max-width: 10rem; */
+}
+
+.guidelines-banner-img {
+  width: clamp(5rem, 30%, 10rem);
+}
+
+#nophoto-img {
+  grid-area: nophoto-img;
+}
+
+#nophoto-txt {
+  grid-area: nophoto-txt;
+}
+
+#respect-img {
+  grid-area: respect-img;
+}
+
+#respect-txt {
+  grid-area: respect-txt;
+}
+
+#noshouting-img {
+  grid-area: noshouting-img;
+}
+
+#noshouting-txt {
+  grid-area: noshouting-txt;
+}
+
+@media (max-width: 30rem) {
+  .guidelines-banner {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "nophoto-img"
+      "nophoto-txt"
+      "respect-img"
+      "respect-txt"
+      "noshouting-img"
+      "noshouting-txt";
+    padding: 2rem 1rem;
+  }
+  .guidelines-banner p:not(:last-of-type)::after {
+    content: "";
+    display: block;
+    width: 50vw;
+    border-bottom: 2px solid var(--black);
+    margin: 2rem auto 1rem;
+  }
+}
