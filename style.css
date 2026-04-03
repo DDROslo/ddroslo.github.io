@@ -58,8 +58,14 @@
   --outline: 2px solid var(--secondary-color-500);
 }
 
-body {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
   background-color: var(--black);
   color: var(--white);
   font-family: var(--primary-ff);
