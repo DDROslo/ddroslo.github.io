@@ -74,6 +74,32 @@ h6 {
   font-family: var(--secondary-ff);
 }
 
+h1 {
+  color: var(--secondary-color-500);
+}
+h2 {
+  color: var(--secondary-color-400);
+}
+h3 {
+  color: var(--secondary-color-300);
+}
+h4 {
+  color: var(--secondary-color-200);
+}
+h5 {
+  color: var(--secondary-color-100);
+}
+h6 {
+  color: var(--secondary-color-050);
+}
+
+hr {
+  padding: 0.1rem;
+  border: 0;
+  border-top: 0.15rem solid var(--white);
+  border-bottom: 0.15rem solid var(--white);
+}
+
 a {
   color: var(--primary-color-300);
 }
@@ -173,4 +199,26 @@ button:active {
   text-align: right;
   font-size: small;
   color: var(--primary-color-500);
+}
+
+ul {
+  list-style-type: disc;
+}
+
+li {
+  list-style: none;
+  position: relative; /* Prevent space-sensitivity (li::before must be absolute) */
+  padding-left: 1.4rem;
+  line-height: 1.5rem;
+}
+
+li::before {
+  content: "";
+  position: absolute; /* Prevent space-sensitivity */
+  left: 0;
+  top: 0.35em;
+  width: 0.8rem;
+  height: 0.8rem;
+  background: url("./assets/images/arrow-red.svg") no-repeat center / contain;
+  transform: rotate(90deg);
 }
